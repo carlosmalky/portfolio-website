@@ -1,0 +1,18 @@
+- live server extension default serves "index.html", from project directory
+- browsers can open the following file types, and more:
+    - PDF
+    - JPG/JPEG
+    - PNG
+    - html
+    - CSS
+    - JS
+    - JSON
+    - XML
+
+- html elements can have classes or id's as identifying names
+- in CSS, classes are noted with a "." and id's are noted with a "#"
+
+html    
+    body 
+        div - main 
+            .......

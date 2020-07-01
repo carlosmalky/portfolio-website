@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background-color: rgb(0, 136, 160);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.left-panel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 100%;
+}
+
+.profile-pic {
+  border: 4px solid black;
+  border-radius: 50%;
+  width: 350px;
+}
+
+.profile-pic:hover {
+  scale: 1.01;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 40pt;
+  color: rgb(214, 49, 151);
+  text-shadow: 1px 1px 1px black;
+}
+
+.name:hover {
+  scale: 1.01;
+}
+
+.shadow-btn-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 64px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link-btn {
+  font-size: xx-large;
+  color: rgb(0, 136, 160);
+  background-color: rgb(231, 231, 231);
+  border: 2px solid black;
+  border-radius: 16px;
+
+  padding: 32px 64px;
+  margin: 16px 32px;
+
+  width: 100%;
+
+  scale: 1;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  scale: 1.02;
+  background-color: rgb(214, 49, 151);
+  color: rgb(231, 231, 231);
+}
+
+.upper-pannel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-me {
+  position: relative;
+  color: antiquewhite;
+  font-size: 73pt;
+  text-shadow: 1px 1px 1px black;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.personal-info-img {
+  border: 4px solid black;
+  border-radius: 50%;
+  width: 225px;
+}
+
+.link-pages-btn {
+  font-size: xx-large;
+  color: rgb(0, 136, 160);
+  background-color: rgb(231, 231, 231);
+  border: 2px solid black;
+  border-radius: 16px;
+
+  padding: 8px 16px;
+  margin: 8px 16px;
+
+  scale: 1;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.link-pages-btn:hover {
+  scale: 1.02;
+  background-color: rgb(214, 49, 151);
+  color: rgb(231, 231, 231);
+}
+
+.description-container {
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 16px 32px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.description {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(200, 200, 200);
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 32px 64px;
+  margin: 32px;
+}
+
+/* resume page */
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.resume {
+  color: antiquewhite;
+  font-size: 73pt;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.resume-download-container {
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.resume-download {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(200, 200, 200);
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 16px 32px;
+  margin: 32px;
+}
+
+.resume-icon {
+  padding: 180px 160px;
+  background: url(./resume_icon.png);
+  background-repeat: no-repeat;
+  background-size: 340px 350px;
+  position: relative;
+  border-radius: 30px;
+  border: 1px;
+  top: 65%;
+  right: 50%;
+  margin-right: -100px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.resume-icon:hover {
+  scale: 1.2;
+}
+
+/* Software Engineering */
+.top-half-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto%;
+  width: 100%;
+}
+
+.software-engineering-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.software-engineering {
+  color: antiquewhite;
+  font-size: 73pt;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.middle-half-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.programming-information-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 64px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.programming-information {
+  color: rgb(179, 216, 218);
+  font-size: 65px;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.programming-information-description-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 64px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.programming-information-description {
+  color: antiquewhite;
+  font-size: 25pt;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.github_logo_button {
+  border: 4px solid black;
+  border-radius: 20%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.github-icon-btn:hover {
+  scale: 1.2;
+}
+
+.language-image {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.language-image:hover {
+  scale: 1.2;
+}
+
+.programming-projects-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 64px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: auto; */
+  /* margin-top: 50px; */
+  margin: 4%;
+}
+
+.programming-projects-title {
+  color: rgb(179, 216, 218);
+  font-size: 65px;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.programming-projects-description-container {
+  border: 3px solid black;
+  background-color: rgb(214, 213, 213);
+  padding: 25px 64px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.project-title {
+  text-align: center;
+  color: rgb(11, 0, 158);
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  text-align: center;
+  color: rgb(10, 8, 29);
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+.project-description:hover {
+  scale: 1.05;
+}
