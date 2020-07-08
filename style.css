@@ -568,6 +568,7 @@ a {
   background-image: url(./main-two.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 }
 
 .greeting-text-container {
