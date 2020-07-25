@@ -577,8 +577,9 @@ a {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 35%;
   margin-top: 200px;
+  border-radius: 10px;
 }
 
 .scroll-down-text {
@@ -587,7 +588,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   font-size: x-large;
-  color: #6de6fc;
+  color: rgb(231, 231, 231);
 }
 
 .greeting-paragraph {
@@ -616,15 +617,15 @@ a {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(0, 0, 0, 0.5);
-  padding: 10px;
   border-radius: 10px;
   border-color: black;
+  width: 35%;
 }
 
 .btn-index {
   font-size: xx-large;
   /*color: rgb(0, 136, 160); */
-  color: #6de6fc;
+  color: rgb(231, 231, 231);
 
   background-color: rgb(0, 0, 0, 0);
   border: 2px solid #6de6fc;
@@ -681,7 +682,7 @@ a {
 .gallery-btn {
   font-size: xx-large;
   /* color: rgb(0, 136, 160); */
-  color: #6de6fc;
+  color: rgb(231, 231, 231);
 
   background-color: rgb(0, 0, 0, 0);
 
