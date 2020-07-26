@@ -561,7 +561,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   height: 100%;
   width: 100%;
 
@@ -577,9 +577,26 @@ a {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 35%;
-  margin-top: 200px;
-  border-radius: 10px;
+}
+
+.btn-index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-color: black;
+}
+
+.greeting-text-container,
+.btn-index-container {
+  width: calc(min(700px, 100%));
+  border-radius: 16px;
+  margin: 0 0 25px 0;
+}
+
+.right-foot {
+  color: white;
 }
 
 .scroll-down-text {
@@ -596,7 +613,6 @@ a {
   font-size: 35pt;
   text-align: center;
   color: rgb(231, 231, 231);
-
   padding: 10px;
   border-radius: 10pt;
 }
@@ -606,20 +622,8 @@ a {
   font-size: 45pt;
   text-align: center;
   color: rgb(231, 231, 231);
-
   padding: 10px;
   border-radius: 10pt;
-}
-
-.btn-index-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(0, 0, 0, 0.5);
-  border-radius: 10px;
-  border-color: black;
-  width: 35%;
 }
 
 .btn-index {
@@ -755,7 +759,6 @@ a {
 
 .gallery-text {
   font-size: 40pt;
-  margin: 0px 100px;
   color: rgb(2, 226, 238);
 }
 .image-container {
