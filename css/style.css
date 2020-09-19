@@ -1,0 +1,135 @@
+:root {
+  --border-radius: 25px;
+
+  --skill-width: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(255, 255, 255);
+}
+
+/* Main Page */
+.main {
+  height: 100%;
+  width: 100%;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  flex: 1;
+}
+
+.greeting-header {
+  padding: 0 10px 0 10px;
+  font-size: 60px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.left-panel-img {
+  width: 280px;
+  border-radius: var(--border-radius);
+}
+
+.txt-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
+  margin: 0 24px 0 24px;
+  padding: 16px 16px 16px 16px;
+}
+
+.large-txt {
+  font-size: 40px;
+  text-align: center;
+}
+
+.small-txt {
+  font-size: 20px;
+  text-align: center;
+}
+
+.copyright-statement-txt {
+  font-size: 10px;
+  text-align: center;
+}
+
+.middle-panel {
+  /* display: flex; */
+  flex: 2;
+}
+
+.right-panel {
+  background-color: rgb(255, 255, 255, 0.2);
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.icon-container {
+  --side-len: 100px;
+
+  height: var(--side-len);
+  width: var(--side-len);
+
+  /* border: 4px solid black; */
+  border-radius: 50%;
+  border-left: 6px solid red;
+  border-top: 6px solid yellow;
+  border-right: 6px solid green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px;
+}
+
+.icon-container.beginner {
+  border-left: 6px solid red;
+  border-top: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.icon-container.intermediate {
+  border-left: 6px solid yellow;
+  border-top: 6px solid yellow;
+  border-right: 6px solid transparent;
+}
+
+.icon-container.advanced {
+  border-left: 6px solid green;
+  border-top: 6px solid green;
+  border-right: 6px solid green;
+}
+
+.skill-icon {
+  width: 100%;
+}
