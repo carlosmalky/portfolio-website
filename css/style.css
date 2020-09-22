@@ -25,21 +25,18 @@ html {
 .main {
   height: 100%;
   width: 100%;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    180deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-color: rgb(207, 207, 207);
+
   display: flex;
 }
 
+/* Left Panel */
 .left-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(44, 100, 205);
   height: 100%;
   flex: 1;
 }
@@ -49,6 +46,7 @@ html {
   font-size: 60px;
   justify-content: space-evenly;
   text-align: center;
+  color: rgb(225, 215, 202);
 }
 
 .left-panel-img {
@@ -57,7 +55,7 @@ html {
 }
 
 .txt-container {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius);
   margin: 0 24px 0 24px;
   padding: 16px 16px 16px 16px;
@@ -73,33 +71,141 @@ html {
   text-align: center;
 }
 
+.contact-icon {
+  width: 55px;
+}
+
+.contact-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.contact-btn-img {
+  width: 100%;
+}
+
 .copyright-statement-txt {
   font-size: 10px;
   text-align: center;
 }
 
+/* Middle Panel */
+
 .middle-panel {
-  /* display: flex; */
   flex: 2;
+  background-color: rgb(216, 216, 216);
+  display: grid;
+  grid-gap: 15px;
+  padding: 15px;
+
+  justify-content: space-evenly;
+  grid-template-areas:
+    "software software software leadership leadership leadership"
+    "about about music music photography photography ";
 }
 
+.card-container.software {
+  grid-area: software;
+  width: 400px;
+}
+
+.card-container.leadership {
+  grid-area: leadership;
+  width: 400px;
+}
+
+.card-container.about {
+  grid-area: about;
+}
+
+.card-container.music {
+  grid-area: music;
+}
+
+.card-container.photography {
+  grid-area: photography;
+}
+
+.card-container {
+  height: 350px;
+  width: 250px;
+  background-color: whitesmoke;
+  border-radius: var(--border-radius);
+
+  box-shadow: 5px 5px rgb(176, 176, 176);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-color: rgb(98, 150, 119);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card-media {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-title-txt {
+  padding-top: 10px;
+  font-size: x-large;
+  margin: 0 15px 7px 15px;
+}
+
+.card-info-txt {
+  color: rgb(107, 107, 107);
+  margin: 0 15px 4px 15px;
+  font-size: medium;
+}
+
+.card-txt-container {
+  height: 50%;
+  width: 100%;
+}
+
+.card-btn {
+  text-decoration: none;
+
+  width: auto;
+  border-radius: 4px;
+
+  margin: 15px;
+  padding: 15px 0;
+
+  display: block;
+
+  transition: all 100ms ease-in-out;
+  text-align: center;
+}
+
+.card-btn:hover {
+  background-color: rgba(44, 100, 205, 0.08);
+}
+
+/* Right panel */
 .right-panel {
-  background-color: rgb(255, 255, 255, 0.2);
   flex: 1;
   height: 100%;
   justify-content: center;
 
   display: grid;
   grid-template-columns: auto auto;
+  grid-column-gap: 34px;
+  background-color: rgb(216, 216, 216);
 }
 
 .icon-container {
-  --side-len: 100px;
+  margin-top: 50px;
+  --side-len: 85px;
+  --border-width: 10px;
 
   height: var(--side-len);
   width: var(--side-len);
 
-  /* border: 4px solid black; */
   border-radius: 50%;
   border-left: 6px solid red;
   border-top: 6px solid yellow;
@@ -109,27 +215,195 @@ html {
   justify-content: center;
   align-items: center;
 
-  padding: 16px;
+  padding: 10px;
 }
 
 .icon-container.beginner {
-  border-left: 6px solid red;
-  border-top: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: var(--border-width) solid rgb(255, 68, 0);
+  border-top: var(--border-width) solid transparent;
+  border-right: var(--border-width) solid transparent;
+  border-bottom: var(--border-width) solid transparent;
 }
 
 .icon-container.intermediate {
-  border-left: 6px solid yellow;
-  border-top: 6px solid yellow;
-  border-right: 6px solid transparent;
+  border-left: var(--border-width) solid rgb(244, 197, 44);
+  border-top: var(--border-width) solid rgb(244, 197, 44);
+  border-right: var(--border-width) solid transparent;
+  border-bottom: var(--border-width) solid transparent;
 }
 
 .icon-container.advanced {
-  border-left: 6px solid green;
-  border-top: 6px solid green;
-  border-right: 6px solid green;
+  border-left: var(--border-width) solid rgb(0, 199, 0);
+  border-top: var(--border-width) solid rgb(0, 199, 0);
+  border-right: var(--border-width) solid rgb(0, 199, 0);
+  border-bottom: var(--border-width) solid transparent;
 }
 
 .skill-icon {
   width: 100%;
 }
+
+.skill-icon.css {
+  width: 75%;
+}
+
+.skill-icon.js {
+  width: 75%;
+}
+
+.skill-icon.guitar {
+  width: 85%;
+}
+
+/* HTMLs template */
+.main.page {
+  width: 100%;
+  height: 100%;
+
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(44, 100, 205);
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(98, 150, 119);
+}
+
+.page-title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 50pt;
+  color: rgb(62, 101, 77);
+  margin: 12px 0 12px 0;
+}
+
+.info-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card {
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: var(--border-radius);
+  padding: 12px;
+  box-shadow: 5px 5px rgb(176, 176, 176);
+  margin: 0 0 18px 0;
+}
+
+.card-title {
+  color: rgb(44, 100, 205);
+  padding: 10px 0 10px 0;
+}
+
+.card-paragraph {
+  padding: 5px 0 5px 0;
+  color: rgb(107, 107, 107);
+}
+.more-info {
+  padding: 5px 0 0 0;
+  color: rgb(101, 101, 101);
+}
+
+.page-img {
+  width: 325px;
+  border-radius: 50px;
+  border: 2px solid rgb(98, 150, 119);
+  box-shadow: 5px 5px rgb(176, 176, 176);
+
+  margin: 0 0 20px 0;
+}
+
+.songs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.song-page {
+  width: 90%;
+  padding: 10px;
+}
+
+/* Photograph page */
+.gallery-container {
+  width: 95%;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-container * {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+/* Software engineering page */
