@@ -92,7 +92,7 @@ html {
 @media screen and (max-width: 500px) {
   .main {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -461,11 +461,6 @@ li a:hover {
 
 .info-card-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
 }
 
 .info-card {
@@ -474,7 +469,7 @@ li a:hover {
   border-radius: var(--border-radius);
   padding: 12px;
   box-shadow: 5px 5px rgb(176, 176, 176);
-  margin: 0 0 18px 0;
+  margin: 0 auto 20px auto;
 }
 
 .card-title {
@@ -511,6 +506,11 @@ li a:hover {
   width: 90%;
   padding: 10px;
 }
+
+/* @media screen and (max-width: 500px) {
+  .info-card-container {
+  }
+} */
 
 /* Photograph page */
 .gallery-container {
