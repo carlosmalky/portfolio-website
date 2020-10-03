@@ -487,12 +487,12 @@ li a:hover {
 }
 
 .page-img {
-  width: 325px;
+  width: calc(min(300px, 90vw));
   border-radius: 50px;
   border: 2px solid rgb(98, 150, 119);
   box-shadow: 5px 5px rgb(176, 176, 176);
-
-  margin: 0 0 20px 0;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 .songs-container {
@@ -506,11 +506,6 @@ li a:hover {
   width: 90%;
   padding: 10px;
 }
-
-/* @media screen and (max-width: 500px) {
-  .info-card-container {
-  }
-} */
 
 /* Photograph page */
 .gallery-container {
